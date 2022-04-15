@@ -11,15 +11,13 @@ const Search = ({ hideButtons = false, term }) => {
   const [{}, dispatch] = useStateValue();
   const [input, setInput] = useState("");
   const navigate = useNavigate();
-  
+
   function search(e) {
     e.preventDefault(); // prevent the form from reloading the page
-    
-  
 
     dispatch({
       type: actionTypes.SET_SEARCH_TERM,
-      term: input
+      term: input,
     });
 
     navigate("/search");
@@ -33,7 +31,10 @@ const Search = ({ hideButtons = false, term }) => {
         {/* 
                 // setting value to input state will maintain the value of the input field 
                 */}
-        <input value={!input ? term : input } onChange={(e) => setInput(e.target.value)} />
+        <input
+          value={!input ? term : input}
+          onChange={(e) => setInput(e.target.value)}
+        />
         <MicIcon />
       </div>
       {!hideButtons ? (
