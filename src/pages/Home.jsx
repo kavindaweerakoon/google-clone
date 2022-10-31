@@ -10,12 +10,12 @@ const Home = () => {
     <div className="home">
       <div className="home__header">
         <div className="home__header--left ">
-          <Link to="/about">About</Link>
-          <Link to="/store">Store</Link>
+          <Link to="/">About</Link>
+          <Link to="/">Store</Link>
         </div>
         <div className="home__header--right">
-          <Link to="/gmail">Gmail</Link>
-          <Link to="/images">Images</Link>
+          <a href="https://clone-5abc2.web.app/">Gmail</a>
+          <Link to="/">Images</Link>
           <AppsIcon />
           <AccountCircleIcon fontSize="large" />
         </div>

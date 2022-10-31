@@ -12,7 +12,7 @@ const Search = ({ hideButtons = false, term }) => {
   const [input, setInput] = useState("");
   const navigate = useNavigate();
 
-  function search(e) {
+  const search = (e) => {
     e.preventDefault(); // prevent the form from reloading the page
 
     dispatch({
