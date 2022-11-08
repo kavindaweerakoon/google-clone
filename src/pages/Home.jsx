@@ -14,7 +14,7 @@ const Home = () => {
           <Link to="/">Store</Link>
         </div>
         <div className="home__header--right">
-          <a href="https://clone-5abc2.web.app/">Gmail</a>
+          <a href="https://gmail-clone-silk.vercel.app/">Gmail</a>
           <Link to="/">Images</Link>
           <AppsIcon />
           <AccountCircleIcon fontSize="large" />
